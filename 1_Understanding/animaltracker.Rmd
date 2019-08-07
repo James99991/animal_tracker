@@ -1,0 +1,101 @@
+---
+title: "Data Understanding - Cluster Analysis on Opinions of Animal Welfare"
+author: "James Smith"
+date: "14 May 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Welcome all to the first installment of a *Cluster Analysis of Opinions on Animal Welfare*. This project is broken into several parts. 
+
+1. Data Understanding
+2. Data Exploration
+3. Data Quality
+4. Dimensionality Reduction
+5. Cluster Analysis
+
+![](faunalytics.png) 
+
+# Introduction
+
+Animal welfare can oftentimes be a contentious topic of discussion. Opinions towards the welfare of animals can vary drastically, with some individuals fervently striving to help improve conditions through activism, personal choices etc. and others who may strongly oppose this. The behaviour, attitudes and opinions of people are complex and multi-faceted with many factors at play. The aim of this paper is to explore and analyse questionnaire data relating to peoples' opinions and attitudes towards animal welfare and to investigate whether there is a natural way of grouping individuals together. Much like how companies find ways of segmenting customers to aid with targeted marketing campaigns \cite{hwang2004ltv, berry2004data, marcus1998practical, an2018customer}, we aim to do the same with regards to how people think about animal welfare.
+
+The dataset we will be looking at is the *Animal Tracker* dataset, which is an annual survey that began in 2008 which aims to capture the opinions and attitudes of U.S. adults with respect to animal rights and related issues. The survey was funded by \href{https://faunalytics.org/about/}{Faunalytics} *Faunalytics* , a `non-profit research organisation'  that conducts studies and provides useful information to help animal welfare advocates. In 2008, 16 questions were asked and from then, each question is asked every third year. In this paper, we will look at the questionnaire carried out in 2008, of which there were 1,554 participants.
+
+# Loading the Data
+
+The dataset and supplementary information used for this project can be found in Faunalytics' public Google Drive [folder](https://drive.google.com/drive/folders/1tzr21r8jNCVYlTTT6vYhP2FbvW8xvkpt). The *Merged Animal Tracker Dataset (Waves 1 - 11) - value labels* csv file contains the labeled version of the dataset. 
+
+```{r load, results='hide', warning=FALSE, message=FALSE}
+# Load packages
+library(plyr)
+library(ggplot2)
+library(dplyr)
+library(knitr)
+library(kableExtra)
+library(psych)   
+library(mice)    
+library(VIM)
+```
+
+```{r 2008}
+# Read in  data
+mydata <- read.csv("C:\\Users\\User\\Documents\\Data Science\\R\\Animal Tracker\\Data\\Merged Animal Tracker Dataset (Waves 1 - 11) - value labels.csv")
+# See what column names there are
+colnames(mydata)
+
+# The ATWAVESCOMBINED column will help us select 2008 data
+summary(mydata$ATWAVESCOMBINED)
+
+# Keep 2008 data
+mydata <- mydata[which(mydata$ATWAVESCOMBINED == "Waves 1 & 1.5 2008"),]
+
+# There are a lot of variables that begin with AT (id's and questions)
+# Remove AT variables and give summary of other variables
+                     
+summary(mydata %>% select(everything(), -starts_with("AT")))
+
+# There are many '#NULL!' values in the dataset. We will treat these as no responses 
+
+#If one removes the minus sign in the previous line, it's clear that there are a lot of 'No response' entries for the questions
+
+# Group #NULL! with 'No response' - To deal with later
+
+mydata[mydata == '#NULL!'] <- "No response"
+```
+
+
+Along with the dataset, there is an accompanying *Data Dictionary*, containing information on all variables and questions asked. Let's take a look.
+
+```{r dictionary}
+# This assumes you save saved your .xlsx data dictionary as a .csv
+# Skip the first line
+dictionary <- read.csv("C:\\Users\\User\\Documents\\Data Science\\R\\Animal Tracker\\Data\\Data Dictionary (Waves 1-11).csv", skip = 1)
+
+# See what column names there are
+head(dictionary,1)
+
+# Clearly there are many unessessary columns
+# Our aim is to find out what all the variables mean, namely the questions
+
+dictionary <- dictionary[c("Variable.Name", "Variable.Label")]
+
+# Find dimensions of dictionary
+dim(dictionary)
+
+# 998 rows seems like a lot, considering there are only 133 variable
+# See what row 130 to row 140 gives - uncomment
+#dictionary[c(130:140),]
+
+# As suspected, there are empty rows beyond row 133
+dictionary <- dictionary[c(1:133),] 
+
+# Display table
+kable(dictionary) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```
+
+

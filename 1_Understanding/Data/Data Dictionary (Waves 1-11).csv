@@ -1,0 +1,1550 @@
+,,,Included in Wave,,,,,,,,,,,,,,,,,,,,,,
+Variable Name,Variable Label,"Response Labels (Note that 999 includes not asked, not applicable, refused, no response)","1/1.5
+(2008)","2
+(2009)","3
+(2010)","4
+(2011)","5
+(2012)","6
+(2013)","7
+(2014)","8
+(2015)","9
+(2016)","10
+(2017)",11 (2018),Additional Notes on Variable,,,,,,,,,,,
+ATWAVE,Wave,"1 = Wave 1 2008
+2 = Wave 1.5 2008
+3 = Wave 2 2009
+4 = Wave 3 2010
+5 = Wave 4 2011
+6 = Wave 5 2012
+7 = Wave 6 2013
+8 = Wave 7 2014
+9 = Wave 8 2015
+10 = Wave 9 2016
+11 = Wave 10 2017",Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,,,,,,,,,,,,
+ATWAVESCOMBINED,Waves 1 & 1.5 Combined,"1 = Waves 1 & 1.5 2008
+2 = Wave 2 2009
+3 = Wave 3 2010
+4 = Wave 4 2011
+5 = Wave 5 2012
+6 = Wave 6 2013
+7 = Wave 7 2014
+8 = Wave 8 2015
+9 = Wave 9 2016
+10 = Wave 10 2017",Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,,,,,,,,,,,,
+ATUNIQUEID,Unique Case Identification across All Waves,[numeric],Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,"This variable was created when the wave files were merged. It has no inherent meaning, and simply provides a way of uniquely identifying individual cases.",,,,,,,,,,,
+ATCASEID,Case Identification within Wave,[numeric],Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,"These IDs were assigned at the time of survey completion. They are unique within wave, but not across all waves.",,,,,,,,,,,
+ATWEIGHT,Final Post Stratification Weights,[numeric],Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,"These weights were produced by the panel companies for each individual wave and are centred around the number of respondents requested. This is not always the number of cases in the wave, so the total N for the merged file may be different from the number of cases once weighting is applied.",,,,,,,,,,,
+AGE,Age,[numeric]; 999 = No response,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,,,,,,,,,,,,
+EDUC,Education Level,"1 = Less than high school
+2 = High school
+3 = Some college
+4 = Bachelor's degree or higher
+999 = No response",Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,"In Waves 7-11, Associate's Degree was included as a category. Those responses were included under Some College.",,,,,,,,,,,
+ETHNIC,Race / Ethnicity,"1 = White, Non-Hispanic
+2 = Black, Non-Hispanic
+3 = Other, Non-Hispanic
+4 = Hispanic
+5 = 2+ Races, Non-Hispanic
+999 = No response",Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,,,,,,,,,,,,
+GENDER,Gender,"1 = Male
+2 = Female
+999 = No response",Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,,,,,,,,,,,,
+HHHEAD,Participant is Household Head,"1 = Yes
+2 = No
+999 = No response",Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,"In Waves 7-11, the response options were made more specific: No was changed to 'Someone else's name only' and Yes to 'Your name only/Your name with someone else's name (jointly owned or rented).' These are still categorized as No and Yes, respectively.",,,,,,,,,,,
+HHSIZE,Household Size,"[numeric]
+8 = 8 or more
+999 = No response",Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,,,,,,,,,,,,
+HOUSING,Housing Type,"1 = A one-family house detached from any other house
+2 = A one-family house attached to one or more houses
+3 = A building with 2 or more apartments
+4 = A mobile home
+5 = Boat, RV, van, etc.
+999 = No response",Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,,,,,,,,,,,,
+HHINCOME,Household Income,"1 = Less than $5,000
+2 = $5,000 to $7,499
+3 = $7,500 to $9,999
+4 = $10,000 to $12,499
+5 = $12,500 to $14,999
+6 = $15,000 to $19,999
+7 = $20,000 to $24,999
+8 = $25,000 to $29,999
+9 = $30,000 to $34,999
+10 = $35,000 to $39,999
+11 = $40,000 to $49,999
+12 = $50,000 to $59,999
+13 = $60,000 to $74,999
+14 = $75,000 to $84,999
+15 = $85,000 to $99,999
+16 = $100,000 to $124,999
+17 = $125,000 to $149,999
+18 = $150,000 to $174,999
+19 = $175,000 or more
+999 = No response",Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,,,,,,,,,,,,
+MARITAL,Marital Status,"1 = Married
+2 = Widowed
+3 = Divorced
+4 = Separated
+5 = Never married
+6 = Living with partner
+999 = No response",Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,,,,,,,,,,,,
+MSA,MSA Status,"1 = Metro
+2 = Non-Metro
+999 = No response",Y,Y,Y,Y,Y,Y,N,N,N,N,N,,,,,,,,,,,,
+REG4,Region - Based on State of Residence,"1 = Northeast
+2 = Midwest
+3 = South
+4 = West
+999 = No response",Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,,,,,,,,,,,,
+RENT,Ownership Status of Living Quarters,"1 = Owned or being bought by you or someone in your household
+2 = Rented for cash
+3 = Occupied without payment of cash rent
+999 = No response",Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,,,,,,,,,,,,
+HHAGE1,Number of Household Members - Children under 2,"[numeric]
+8 = 8 or more
+999 = No response",Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,"In Waves 1-6, this category was written as ""Children 0-2."" It was changed to ""age 1 or younger"" in Waves 7-11. This wording captures the intent of both (i.e., children who have not yet turned 2).",,,,,,,,,,,
+HHAGE2,Number of Household Members - Children 2-5,"[numeric]
+8 = 8 or more
+999 = No response",Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,,,,,,,,,,,,
+HHAGE3,Number of Household Members - Children 6-12,"[numeric]
+8 = 8 or more
+999 = No response",Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,,,,,,,,,,,,
+HHAGE4,Number of Household Members - Children 13-17,"[numeric]
+8 = 8 or more
+999 = No response",Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,,,,,,,,,,,,
+HHAGE5,Number of Household Members - Adults 18,"[numeric]
+8 = 8 or more
+999 = No response",Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,,,,,,,,,,,,
+WORK,Current Employment Status,"1 = Working - as a paid employee
+2 = Working - self-employed
+3 = Not working - on temporary layoff from a job
+4 = Not working - looking for work
+5 = Not working - retired
+6 = Not working - disabled
+7 = Not working - other
+999 = No response",Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,,,,,,,,,,,,
+INTERNET,Household Internet Access,"1 = Yes
+2 = No
+999 = No response",Y,Y,Y,Y,Y,Y,Y,Y,Y,N,N,,,,,,,,,,,,
+PET_CAT,[Cat] : Do you have any pets?,"1 = Yes
+2 = No
+999 = No response",Y,Y,Y,Y,Y,Y,N,N,N,Y,N,,,,,,,,,,,,
+PET_DOG,[Dog] : Do you have any pets?,"1 = Yes
+2 = No
+999 = No response",Y,Y,Y,Y,Y,Y,N,N,N,Y,N,,,,,,,,,,,,
+PET_FISH,[Fish] : Do you have any pets?,"1 = Yes
+2 = No
+999 = No response",Y,Y,Y,Y,Y,Y,N,N,N,Y,N,,,,,,,,,,,,
+PET_BIRD,[Bird] : Do you have any pets?,"1 = Yes
+2 = No
+999 = No response",Y,Y,Y,Y,Y,Y,N,N,N,Y,N,,,,,,,,,,,,
+PET_GERBIL,[Gerbil etc.] : Do you have any pets?,"1 = Yes
+2 = No
+999 = No response",Y,Y,Y,Y,Y,Y,N,N,N,Y,N,,,,,,,,,,,,
+PET_REPTILE,[Reptile] : Do you have any pets?,"1 = Yes
+2 = No
+999 = No response",Y,Y,Y,Y,Y,Y,N,N,N,Y,N,,,,,,,,,,,,
+PET_HORSE,[Horse] : Do you have any pets?,"1 = Yes
+2 = No
+999 = No response",Y,Y,Y,Y,Y,Y,N,N,N,Y,N,,,,,,,,,,,,
+PET_OTHER,[Other] : Do you have any pets?,"1 = Yes
+2 = No
+999 = No response",Y,Y,Y,Y,Y,Y,N,N,N,Y,N,,,,,,,,,,,,
+PET_ALL,Does anyone in the household own a pet?,"1 = Yes
+2 = No
+999 = No response",Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,,,,,,,,,,,,
+AT1_1,[Animal protection] : What is your opinion of each of the following social causes or political movements?,"1 = Favorable
+2 = Unfavorable
+3 = No opinion
+4 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT1_2,[Environmentalism] : What is your opinion of each of the following social causes or political movements?,"1 = Favorable
+2 = Unfavorable
+3 = No opinion
+4 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT1_3,[Homeless advocacy] : What is your opinion of each of the following social causes or political movements?,"1 = Favorable
+2 = Unfavorable
+3 = No opinion
+4 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT1_4,[Workers rights] : What is your opinion of each of the following social causes or political movements?,"1 = Favorable
+2 = Unfavorable
+3 = No opinion
+4 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT1_5,[Gay/lesbian rights] : What is your opinion of each of the following social causes or political movements?,"1 = Favorable
+2 = Unfavorable
+3 = No opinion
+4 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT1_6,[Immigration reform] : What is your opinion of each of the following social causes or political movements?,"1 = Favorable
+2 = Unfavorable
+3 = No opinion
+4 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT1_7,[Tax reform and relief] : What is your opinion of each of the following social causes or political movements?,"1 = Favorable
+2 = Unfavorable
+3 = No opinion
+4 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT1_8,[Pro life (anti-abortion)] : What is your opinion of each of the following social causes or political movements?,"1 = Favorable
+2 = Unfavorable
+3 = No opinion
+4 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT2_1,[Attorneys] : How much credibility do you give to each of the following sources when it comes to information about animal welfare?,"1 = Significant
+2 = Moderate
+3 = Very little
+4 = None
+5 = Do not know
+999 = No response",N,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT2_2,[Academics and scholars] : How much credibility do you give to each of the following sources when it comes to information about animal welfare?,"1 = Significant
+2 = Moderate
+3 = Very little
+4 = None
+5 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT2_3,[Animal protection groups] : How much credibility do you give to each of the following sources when it comes to information about animal welfare?,"1 = Significant
+2 = Moderate
+3 = Very little
+4 = None
+5 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT2_4,[Businesses and corporations] : How much credibility do you give to each of the following sources when it comes to information about animal welfare?,"1 = Significant
+2 = Moderate
+3 = Very little
+4 = None
+5 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT2_5,[Family and friends] : How much credibility do you give to each of the following sources when it comes to information about animal welfare?,"1 = Significant
+2 = Moderate
+3 = Very little
+4 = None
+5 = Do not know
+999 = No response",N,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT2_6,[Farmers and ranchers] : How much credibility do you give to each of the following sources when it comes to information about animal welfare?,"1 = Significant
+2 = Moderate
+3 = Very little
+4 = None
+5 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT2_7,[Government (federal or state)] : How much credibility do you give to each of the following sources when it comes to information about animal welfare?,"1 = Significant
+2 = Moderate
+3 = Very little
+4 = None
+5 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT2_8,[Local or national news media] : How much credibility do you give to each of the following sources when it comes to information about animal welfare?,"1 = Significant
+2 = Moderate
+3 = Very little
+4 = None
+5 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT2_9,[Scientists and researchers] : How much credibility do you give to each of the following sources when it comes to information about animal welfare?,"1 = Significant
+2 = Moderate
+3 = Very little
+4 = None
+5 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT2_10,[Veterinarians] : How much credibility do you give to each of the following sources when it comes to information about animal welfare?,"1 = Significant
+2 = Moderate
+3 = Very little
+4 = None
+5 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT3_1,"[Adopted an animal] : In the past year, have you personally done any of the following? ","1 = Yes
+2 = No
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT3_2,"[Bought an animal] : In the past year, have you personally done any of the following? ","1 = Yes
+2 = No
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT3_3,"[Consumed a meat or dairy substitute] : In the past year, have you personally done any of the following? ","1 = Yes
+2 = No
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT3_4,"[Donated to an animal group] : In the past year, have you personally done any of the following? ","1 = Yes
+2 = No
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT3_5,"[Gone hunting or fishing] : In the past year, have you personally done any of the following? ","1 = Yes
+2 = No
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT3_6,"[Gone to a circus with animals] : In the past year, have you personally done any of the following? ","1 = Yes
+2 = No
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT3_7,"[Visited a zoo or aquarium] : In the past year, have you personally done any of the following?","1 = Yes
+2 = No
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT3_8,"[Volunteered for an animal group] : In the past year, have you personally done any of the following? ","1 = Yes
+2 = No
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT3_9,"[Watched wildlife] : In the past year, have you personally done any of the following? ","1 = Yes
+2 = No
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT4_1,"[Adopted an animal] : In the past year, roughly how often have you personally done each of the following? ","1 = Often (i.e., daily or weekly)
+2 = Sometimes (i.e., monthly or every few months)
+3 = Rarely (i.e., once or twice during the year)
+4 = Never
+5 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT4_2,"[Bought an animal] : In the past year, roughly how often have you personally done each of the following? ","1 = Often (i.e., daily or weekly)
+2 = Sometimes (i.e., monthly or every few months)
+3 = Rarely (i.e., once or twice during the year)
+4 = Never
+5 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT4_3,"TRK2: In the past year, roughly how often have you personally done each of the following? Consumed a meat or dairy substitute","1 = Often (i.e., daily or weekly)
+2 = Sometimes (i.e., monthly or every few months)
+3 = Rarely (i.e., once or twice during the year)
+4 = Never
+5 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT4_4,"[Donated to an animal group] : In the past year, roughly how often have you personally done each of the following? ","1 = Often (i.e., daily or weekly)
+2 = Sometimes (i.e., monthly or every few months)
+3 = Rarely (i.e., once or twice during the year)
+4 = Never
+5 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT4_5,"[Gone hunting or fishing] : In the past year, roughly how often have you personally done each of the following? ","1 = Often (i.e., daily or weekly)
+2 = Sometimes (i.e., monthly or every few months)
+3 = Rarely (i.e., once or twice during the year)
+4 = Never
+5 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT4_6,"[Gone to a circus with animals] : In the past year, roughly how often have you personally done each of the following? ","1 = Often (i.e., daily or weekly)
+2 = Sometimes (i.e., monthly or every few months)
+3 = Rarely (i.e., once or twice during the year)
+4 = Never
+5 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT4_7,"[Visited a zoo or aquarium] : In the past year, roughly how often have you personally done each of the following? ","1 = Often (i.e., daily or weekly)
+2 = Sometimes (i.e., monthly or every few months)
+3 = Rarely (i.e., once or twice during the year)
+4 = Never
+5 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT4_8,"[Volunteered for an animal group] : In the past year, roughly how often have you personally done each of the following? ","1 = Often (i.e., daily or weekly)
+2 = Sometimes (i.e., monthly or every few months)
+3 = Rarely (i.e., once or twice during the year)
+4 = Never
+5 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT4_9,"[Watched wildlife] : In the past year, roughly how often have you personally done each of the following? ","1 = Often (i.e., daily or weekly)
+2 = Sometimes (i.e., monthly or every few months)
+3 = Rarely (i.e., once or twice during the year)
+4 = Never
+5 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT5_1,[Attending circuses or rodeos] : How important to you is the protection of animals when it comes to making the following personal choices? ,"1 = Very important
+2 = Somewhat important
+3 = Not very important
+4 = Not at all important
+5 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT5_2,[Buying clothing] : How important to you is the protection of animals when it comes to making the following personal choices? ,"1 = Very important
+2 = Somewhat important
+3 = Not very important
+4 = Not at all important
+5 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT5_3,[Buying food] : How important to you is the protection of animals when it comes to making the following personal choices? ,"1 = Very important
+2 = Somewhat important
+3 = Not very important
+4 = Not at all important
+5 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT5_4,[Buying consumer products] : How important to you is the protection of animals when it comes to making the following personal choices? ,"1 = Very important
+2 = Somewhat important
+3 = Not very important
+4 = Not at all important
+5 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT5_5,[Getting a new pet] : How important to you is the protection of animals when it comes to making the following personal choices? ,"1 = Very important
+2 = Somewhat important
+3 = Not very important
+4 = Not at all important
+5 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT5_6,[Going hunting or fishing] : How important to you is the protection of animals when it comes to making the following personal choices? ,"1 = Very important
+2 = Somewhat important
+3 = Not very important
+4 = Not at all important
+5 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT5_7,[Going to dog or horse races] : How important to you is the protection of animals when it comes to making the following personal choices? ,"1 = Very important
+2 = Somewhat important
+3 = Not very important
+4 = Not at all important
+5 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT5_8,[Voting for a political candidate] : How important to you is the protection of animals when it comes to making the following personal choices? ,"1 = Very important
+2 = Somewhat important
+3 = Not very important
+4 = Not at all important
+5 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT6_1,[Adopt an animal from a shelter] : Has your concern for animals ever caused you to do any of the following? ,"1 = Yes
+2 = No
+3 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT6_2,[Boycott a store or a product] : Has your concern for animals ever caused you to do any of the following? ,"1 = Yes
+2 = No
+3 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT6_3,[Buy meat or dairy products labeled humane] : Has your concern for animals ever caused you to do any of the following? ,"1 = Yes
+2 = No
+3 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT6_4,[Buy products labeled as not tested on animals] : Has your concern for animals ever caused you to do any of the following? ,"1 = Yes
+2 = No
+3 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT6_5,[Sign a petition for an animal cause] : Has your concern for animals ever caused you to do any of the following? ,"1 = Yes
+2 = No
+3 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT6_6,[Spay or neuter your pet] : Has your concern for animals ever caused you to do any of the following? ,"1 = Yes
+2 = No
+3 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT6_7,[Vote for an animal-friendly candidate] : Has your concern for animals ever caused you to do any of the following? ,"1 = Yes
+2 = No
+3 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT6_8,[Vote for an animal-friendly law or initiative] : Has your concern for animals ever caused you to do any of the following? ,"1 = Yes
+2 = No
+3 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT7,"In the past three months, how often have you talked about or heard someone talking about animal protection, including animal rights and/or animal welfare? ","1 = Frequently (i.e., daily or almost daily)
+2 = Occasionally (i.e., weekly or monthly)
+3 = Rarely (i.e., once or twice)
+4 = Not at all
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT8_1,[Animals in circuses and rodeos] : How knowledgeable do you feel about issues that affect the welfare of animals in the following circumstances? ,"1 = Very knowledgeable
+2 = Somewhat knowledgeable
+3 = Not very knowledgeable
+4 = Not at all knowledgeable
+5 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT8_2,[Animals in laboratories] : How knowledgeable do you feel about issues that affect the welfare of animals in the following circumstances? ,"1 = Very knowledgeable
+2 = Somewhat knowledgeable
+3 = Not very knowledgeable
+4 = Not at all knowledgeable
+5 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT8_3,[Animals in zoos and aquariums] : How knowledgeable do you feel about issues that affect the welfare of animals in the following circumstances? ,"1 = Very knowledgeable
+2 = Somewhat knowledgeable
+3 = Not very knowledgeable
+4 = Not at all knowledgeable
+5 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT8_4,[Animals in pounds and shelters] : How knowledgeable do you feel about issues that affect the welfare of animals in the following circumstances? ,"1 = Very knowledgeable
+2 = Somewhat knowledgeable
+3 = Not very knowledgeable
+4 = Not at all knowledgeable
+5 = Do not know
+999 = No response",N,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT8_5,[Animals kept as companions or pets] : How knowledgeable do you feel about issues that affect the welfare of animals in the following circumstances? ,"1 = Very knowledgeable
+2 = Somewhat knowledgeable
+3 = Not very knowledgeable
+4 = Not at all knowledgeable
+5 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT8_6,[Animals raised for food] : How knowledgeable do you feel about issues that affect the welfare of animals in the following circumstances? ,"1 = Very knowledgeable
+2 = Somewhat knowledgeable
+3 = Not very knowledgeable
+4 = Not at all knowledgeable
+5 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT8_7,[Endangered species] : How knowledgeable do you feel about issues that affect the welfare of animals in the following circumstances? ,"1 = Very knowledgeable
+2 = Somewhat knowledgeable
+3 = Not very knowledgeable
+4 = Not at all knowledgeable
+5 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT8_8,[Horses and dogs used in racing] : How knowledgeable do you feel about issues that affect the welfare of animals in the following circumstances? ,"1 = Very knowledgeable
+2 = Somewhat knowledgeable
+3 = Not very knowledgeable
+4 = Not at all knowledgeable
+5 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT8_9,[Wildlife on public lands] : How knowledgeable do you feel about issues that affect the welfare of animals in the following circumstances? ,"1 = Very knowledgeable
+2 = Somewhat knowledgeable
+3 = Not very knowledgeable
+4 = Not at all knowledgeable
+5 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT9_1,[Animals in circuses and rodeos] : How important to you is the welfare and protection of animals in each of the following situations?,"1 = Very important
+2 = Somewhat important
+3 = Not very important
+4 = Not at all important
+5 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT9_2,[Animals in laboratories] : How important to you is the welfare and protection of animals in each of the following situations?,"1 = Very important
+2 = Somewhat important
+3 = Not very important
+4 = Not at all important
+5 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT9_3,[Animals in pounds or shelters] : How important to you is the welfare and protection of animals in each of the following situations?,"1 = Very important
+2 = Somewhat important
+3 = Not very important
+4 = Not at all important
+5 = Do not know
+999 = No response",N,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT9_4,[Animals in zoos and aquariums] : How important to you is the welfare and protection of animals in each of the following situations?,"1 = Very important
+2 = Somewhat important
+3 = Not very important
+4 = Not at all important
+5 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT9_5,[Animals kept as companions or pets] : How important to you is the welfare and protection of animals in each of the following situations?,"1 = Very important
+2 = Somewhat important
+3 = Not very important
+4 = Not at all important
+5 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT9_6,[Animals raised for food] : How important to you is the welfare and protection of animals in each of the following situations?,"1 = Very important
+2 = Somewhat important
+3 = Not very important
+4 = Not at all important
+5 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT9_7,[Endangered species] : How important to you is the welfare and protection of animals in each of the following situations?,"1 = Very important
+2 = Somewhat important
+3 = Not very important
+4 = Not at all important
+5 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT9_8,[Horses and dogs used in racing] : How important to you is the welfare and protection of animals in each of the following situations?,"1 = Very important
+2 = Somewhat important
+3 = Not very important
+4 = Not at all important
+5 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT9_9,[Wildlife on public lands] : How important to you is the welfare and protection of animals in each of the following situations?,"1 = Very important
+2 = Somewhat important
+3 = Not very important
+4 = Not at all important
+5 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT10,"How important is it that schools and teachers (Kindergarten-12 and college level) incorporate humane education, including animal welfare topics, into their lessons?","1 = Very important
+2 = Somewhat important
+3 = Not very important
+4 = Not at all important
+5 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT11_1,"[Anti-cruelty investigations] : In general, how much do you support or oppose each of the following tactics? ","1 = Strongly support
+2 = Somewhat support
+3 = Somewhat oppose
+4 = Strongly oppose
+5 = No opinion
+6 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT11_2,"[Calling for product boycotts] : In general, how much do you support or oppose each of the following tactics? ","1 = Strongly support
+2 = Somewhat support
+3 = Somewhat oppose
+4 = Strongly oppose
+5 = No opinion
+6 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT11_3,"[Demonstrating or protesting] : In general, how much do you support or oppose each of the following tactics? ","1 = Strongly support
+2 = Somewhat support
+3 = Somewhat oppose
+4 = Strongly oppose
+5 = No opinion
+6 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT11_4,"[Filing lawsuits to protect animals] : In general, how much do you support or oppose each of the following tactics? ","1 = Strongly support
+2 = Somewhat support
+3 = Somewhat oppose
+4 = Strongly oppose
+5 = No opinion
+6 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT11_5,"[Lobbying government officials] : In general, how much do you support or oppose each of the following tactics? ","1 = Strongly support
+2 = Somewhat support
+3 = Somewhat oppose
+4 = Strongly oppose
+5 = No opinion
+6 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT11_6,"[Speaking in schools] : In general, how much do you support or oppose each of the following tactics? ","1 = Strongly support
+2 = Somewhat support
+3 = Somewhat oppose
+4 = Strongly oppose
+5 = No opinion
+6 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT11_7,"[State ballot initiatives] : In general, how much do you support or oppose each of the following tactics? ","1 = Strongly support
+2 = Somewhat support
+3 = Somewhat oppose
+4 = Strongly oppose
+5 = No opinion
+6 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT11_8,"[Using media to reach the public] : In general, how much do you support or oppose each of the following tactics? ","1 = Strongly support
+2 = Somewhat support
+3 = Somewhat oppose
+4 = Strongly oppose
+5 = No opinion
+6 = Do not know
+999 = No response",Y,N,N,Y,N,N,Y,N,N,Y,N,,,,,,,,,,,,
+AT12,"Regardless of your personal opinion about the animal protection movement, how much of an impact do you think it has had on our nation's policies?","1 = Significant impact
+2 = Moderate impact
+3 = Very little impact
+4 = No impact
+5 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT13_1,[Animals in circuses and rodeos] : Do you think that laws protecting animals from inhumane treatment are adequate or inadequate for each of the following kinds of animals?,"1 = Adequate
+2 = Not adequate
+3 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT13_2,[Animals in laboratories] : Do you think that laws protecting animals from inhumane treatment are adequate or inadequate for each of the following kinds of animals?,"1 = Adequate
+2 = Not adequate
+3 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT13_3,[Animals in pounds or shelters] : Do you think that laws protecting animals from inhumane treatment are adequate or inadequate for each of the following kinds of animals?,"1 = Adequate
+2 = Not adequate
+3 = Do not know
+999 = No response",N,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT13_4,[Animals in zoos and aquariums] : Do you think that laws protecting animals from inhumane treatment are adequate or inadequate for each of the following kinds of animals?,"1 = Adequate
+2 = Not adequate
+3 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT13_5,[Animals kept as companions or pets] : Do you think that laws protecting animals from inhumane treatment are adequate or inadequate for each of the following kinds of animals?,"1 = Adequate
+2 = Not adequate
+3 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT13_6,[Animals raised for food] : Do you think that laws protecting animals from inhumane treatment are adequate or inadequate for each of the following kinds of animals?,"1 = Adequate
+2 = Not adequate
+3 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT13_7,[Endangered species] : Do you think that laws protecting animals from inhumane treatment are adequate or inadequate for each of the following kinds of animals?,"1 = Adequate
+2 = Not adequate
+3 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT13_8,[Horses and dogs used in racing] : Do you think that laws protecting animals from inhumane treatment are adequate or inadequate for each of the following kinds of animals?,"1 = Adequate
+2 = Not adequate
+3 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT13_9,[Wildlife on public lands] : Do you think that laws protecting animals from inhumane treatment are adequate or inadequate for each of the following kinds of animals?,"1 = Adequate
+2 = Not adequate
+3 = Do not know
+999 = No response",Y,Y,N,N,Y,N,N,Y,N,N,Y,,,,,,,,,,,,
+AT14,"Would you support or oppose a law requiring that farm animals including pigs, cows, and chickens are provided with enough space to behave naturally?","1 = Strongly support
+2 = Somewhat support
+3 = Somewhat oppose
+4 = Strongly oppose
+5 = Do not know
+999 = No response",Y,Y,N,N,N,N,N,N,N,N,N,,,,,,,,,,,,
+AT15_1,[Some animals are capable of thinking and feeling emotions] : Do you agree or disagree with each of the following statements? ,"1 = Agree
+2 = Disagree
+3 = No opinion
+4 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT15_2,[Buying clothes made of real animal fur is ethically acceptable] : Do you agree or disagree with each of the following statements? ,"1 = Agree
+2 = Disagree
+3 = No opinion
+4 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT15_3,[Dissecting animals is a vital way for students to learn about anatomy] : Do you agree or disagree with each of the following statements? ,"1 = Agree
+2 = Disagree
+3 = No opinion
+4 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT15_4,[Farm animals deserve the same consideration as pets and other animals] : Do you agree or disagree with each of the following statements? ,"1 = Agree
+2 = Disagree
+3 = No opinion
+4 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT15_5,[People have an obligation to avoid harming all animals] : Do you agree or disagree with each of the following statements? ,"1 = Agree
+2 = Disagree
+3 = No opinion
+4 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT15_6,[Protecting endangered or threatened species should be a global priority] : Do you agree or disagree with each of the following statements? ,"1 = Agree
+2 = Disagree
+3 = No opinion
+4 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT15_7,[Research on animals is necessary for medical advancement] : Do you agree or disagree with each of the following statements? ,"1 = Agree
+2 = Disagree
+3 = No opinion
+4 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT15_8,[Using animals for food is necessary for human survival] : Do you agree or disagree with each of the following statements? ,"1 = Agree
+2 = Disagree
+3 = No opinion
+4 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+AT16,Do you personally support or oppose the animal protection movement's goal to minimize and eventually eliminate all forms of animal cruelty and suffering?,"1 = Strongly support
+2 = Somewhat support
+3 = Somewhat oppose
+4 = Strongly oppose
+5 = Do not know
+999 = No response",Y,N,Y,N,N,Y,N,N,Y,N,N,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,

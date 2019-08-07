@@ -1,0 +1,226 @@
+---
+title: "Data Understanding - Cluster Analysis on Opinions of Animal Welfare"
+author: "James Smith"
+date: "14 May 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Welcome all to the first installment of a *Cluster Analysis of Opinions on Animal Welfare*. This project is broken into several parts. 
+
+1. Data Understanding
+2. Data Exploration
+3. Data Quality
+4. Dimensionality Reduction
+5. Cluster Analysis
+
+![](C:/Users/User/Documents/Data Science/R/Animal Tracker/1_Understanding/Images/faunalytics.png) 
+
+# Introduction
+
+Animal welfare can oftentimes be a contentious topic of discussion. Opinions towards the welfare of animals can vary drastically, with some individuals fervently striving to help improve conditions through activism, personal choices etc. and others who may strongly oppose this. The behaviour, attitudes and opinions of people are complex and multi-faceted with many factors at play. The aim of this paper is to explore and analyse questionnaire data relating to peoples' opinions and attitudes towards animal welfare and to investigate whether there is a natural way of grouping individuals together. Much like how companies find ways, we aim to do the same with regards to how people think about animal welfare.
+
+The dataset we will be looking at is the *Animal Tracker* dataset, which is an annual survey that began in 2008 which aims to capture the opinions and attitudes of U.S. adults with respect to animal rights and related issues. The survey was funded by [Faunalytics](https://faunalytics.org/about/), a `non-profit research organisation'  that conducts studies and provides useful information to help animal welfare advocates.
+
+In 2008, 16 questions were asked to a group of participants, and from then, each question is asked every third year.
+
+# Loading the Data
+
+The dataset and supplementary information used for this project can be found in Faunalytics' public Google Drive [folder](https://drive.google.com/drive/folders/1tzr21r8jNCVYlTTT6vYhP2FbvW8xvkpt). The *Merged Animal Tracker Dataset (Waves 1 - 11) - value labels* csv file contains the labeled version of the dataset.
+
+Let's first load some packages
+
+```{r load, results='hide', warning=FALSE, message=FALSE}
+# Load packages
+library(tidyverse)
+library(knitr)
+
+# To clean workspace
+rm(list=ls())
+```
+
+We have our data downloaded and unzipped in a folder titled `data` in the same directory as this markdown file. In order to avoid hardcoding file paths we can use `dirname(rstudioapi::getActiveDocumentContext()$path)` to get the folder that this file is located in (providing you are using rstudio and not plain-ol-R/R-Markdown). We'll create a function to do this so that it can be re-used to obtain other files later on. Note that the `.xlsx` files are saved as csv's beforehand to avoid java errors.
+
+**Note:** R Markdown documents are rendered in a separate R session that doesn't have access to the rstudioapi. Thus, the first line in the below cell won't work if Knitting in R Markdown
+
+## Survey Data
+
+```{r Load data}
+#master_folder <- dirname(rstudioapi::getActiveDocumentContext()$path)
+
+master_folder <- "C:/Users/User/Documents/Data Science/R/Animal Tracker/1_Understanding"
+
+data_folder_name <- "Data"
+
+data_labels <- "Merged Animal Tracker Dataset (Waves 1 - 11) - value labels.csv"
+
+get_data <- function(master_folder, data_folder_name, filename){
+  data_location <- paste(master_folder, data_folder_name, filename, sep = "/")
+  return(read.csv(data_location))
+}
+
+
+```
+```{r View}
+mydata <- get_data(master_folder, data_folder_name, data_labels)
+colnames(mydata)
+```
+The ATWAVESCOMBINED column gives the number of participants for a given Wave/Year. This will useful later on when we want to filter for a given year.
+```{r}
+summary(mydata$ATWAVESCOMBINED)
+```
+
+There are a lot of variables that begin with AT (id's and questions). Let's remove AT variables and give a summary of the other more explanatory variables.
+
+```{r View_2}
+summary(mydata %>% select(everything(), - starts_with("AT")))
+```
+
+We can see that there are many `#NULL!` values in the dataset. We will treat these as no responses. If one removes the minus sign in the previous line, it's also clear that there are a lot of `No response` entries for the questions. For now we will group `#NULL!` with `No response` to deal with later when handling missing values.
+
+```{r Grouping Nulls with No response}
+mydata[mydata == '#NULL!'] <- "No response"
+```
+
+## Data Dictionary
+
+Along with the dataset, there is an accompanying *Data Dictionary*, containing information on all variables and questions asked. Let's take a look.
+
+```{r dictionary}
+# This assumes you save saved your .xlsx data dictionary as a .csv
+
+dictionary = "Data Dictionary (Waves 1-11).csv"
+
+get_dictionary <- function(master_folder, data_folder_name, filename){
+  data_location <- paste(master_folder, data_folder_name, filename, sep = "/")
+  # Skip first line
+  return(read.csv(data_location, skip = 1))
+}
+```
+
+Load the dictionary andview column names
+
+```{r dict col names}
+dictionary <- get_dictionary(master_folder, data_folder_name,dictionary)
+head(dictionary, 3)
+```
+
+Clearly there are many unessessary columns (X, X.1, X.2, ... , X.10). Our aim is to find out what all the variables mean, namely the questions and when they were asked. We will rename some of the columns we'll keep and remove those that are redundant.
+
+```{r cleaning dict}
+dictionary <- dictionary %>% dplyr::rename(variable_name = Variable.Name,
+                                    variable_label = Variable.Label,
+                                    response_label = Response.Labels..Note.that.999.includes.not.asked..not.applicable..refused..no.response.
+                                    )
+dictionary <- dictionary %>% select( -c("X", "X.1", "X.2", "X.3", "X.4", "X.5", "X.6", "X.7", "X.8", "X.9", "X.10"))
+```
+
+Find dimensions of dictionary
+
+```{r}
+dim(dictionary)
+```
+998 rows seems like a lot, considering there are only 133 variable. Looking at rows 130 to row 140 using `dictionary[c(130:140),]` shows that there are empty rows beyond 133.
+```{r Removing rows in dict}
+dictionary <- dictionary %>% slice(1:133)
+```
+
+```{r}
+dictionary[34:37,]
+```
+We can see that the variable name `AT1_1` asks a general question but is then related to a specific example i.e 
+
+> What is your opinion of each of the following social causes or political movements?
+
+is a general question (refered to as `AT1`) but it asks for the respondants opinion with respect to *[Animal protection]* (`AT1_1`), and *[Environmentalism]* (`AT1_2`).
+
+### Cleaning the Dictionary
+
+It is important to extract the main questions from their sub-questions for when we go to explore and analyse the data.
+
+```{r Dividing Questions}
+
+spliting_questions = function(dictionary){
+  
+  # Convert variable labels to character
+  dictionary$variable_label = as.character(dictionary$variable_label)
+  # Lists all row indexes that contain the question divider
+  divided_questions = c(grep(':', dictionary$variable_label))
+
+  dict_divided_questions = dictionary[divided_questions,]
+  dict_non_divided_questions = dictionary[-divided_questions, ]
+  divided_questions = as.data.frame(t(data.frame(sapply(dict_divided_questions$variable_label, strsplit, split=':'))))
+  divided_questions = divided_questions %>% dplyr::rename(sub_question = V1,
+                                                 main_question = V2)
+  dictionary_questions = cbind(dict_divided_questions, divided_questions)
+  
+  dict_non_divided_questions$sub_question = ""
+  dict_non_divided_questions$main_question = dict_non_divided_questions$variable_label
+  
+  # Join back together
+  dictionary = rbind(dict_non_divided_questions, dictionary_questions)
+  
+  return(dictionary)
+}
+
+dictionary = spliting_questions(dictionary)
+```
+
+We now have our cleaned questions!
+
+# Transformations
+
+The next step is to figure out a way of joining the survey data (`mydata`) and the question data (`dictionary`) together in order to create meaningful visualisations. The survey data is on a 1 row per respondent level with 132 data points (although some are ID's). The question data is on a 1 row per question/variable. Currently there are no columns to join on and so we must first do some transformations. To do this we will take our currently wide and short survey data table and turn it into a long and narrow table, summarasid by the slightly off image below (animal_tracker_labels = `mydata`, Data Dictionary (.xlsx) = `dictionary`).
+
+![](C:/Users/User/Documents/Data Science/R/Animal Tracker/1_Understanding/Images/ETL.png) 
+
+In practice, how do we impliment this?
+
+Using the trusty `melt()` function in the package `reshape`. In order to have a question_id column we need to melt all the questino column into 1. 
+```{r reshape, results='hide', warning=FALSE, message=FALSE}
+library(reshape)
+```
+
+```{r Transformation}
+# List columns we want to keep, will melt all others
+id_columns = c("ATWAVE","ATWAVESCOMBINED","ATUNIQUEID","ATCASEID","ATWEIGHT","AGE","EDUC","ETHNIC","GENDER",
+       "HHHEAD","HHSIZE","HOUSING","HHINCOME","MARITAL","MSA","REG4","RENT","HHAGE1","HHAGE2","HHAGE3",
+       "HHAGE4","HHAGE5","WORK","INTERNET","PET_CAT","PET_DOG","PET_FISH","PET_BIRD","PET_GERBIL","PET_REPTILE",
+       "PET_HORSE","PET_OTHER","PET_ALL")
+
+wave = "Waves 1 & 1.5 2008"
+wave_ind_column = "X1.1.5..2008." # Column to filter for questions that were asked
+
+melt_data = function(mydata, wave){
+  return(  
+    mydata %>% 
+     subset(ATWAVESCOMBINED == wave) %>% 
+      reshape::melt(id = id_columns) %>%
+        dplyr::rename("ATTRIBUTEID" = variable, "RESPONSE" = value)
+  ) 
+}
+
+mydata_long_2008 = melt_data(mydata, wave)
+head(mydata_long_2008,2)
+
+```
+
+From here we can now join the dictionary table to our newly created question and response table
+
+```{r Joining Tables}
+dictionary = dictionary %>% dplyr::rename("ATTRIBUTEID" = variable_name)
+
+merged = merge(mydata_long_2008, dictionary)
+
+# Remove questions that were not asked for a given year
+merged = merged[merged$"X1.1.5..2008." == "Y",]
+
+```
+
+From here we are just about ready to begin visualising our survey data for 2008. We will just need to save our table out as a csv to be picked up by Tableau.
+
+# Data Visualisation
+
